@@ -14,6 +14,7 @@ public class RegularExpress {
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
         String text = reader.readLine();
+        System.out.println("Step 0: " + text);
         pattern = Pattern.compile("[A-Z][^?!]+\\.");
 
         matcher = pattern.matcher(text);
