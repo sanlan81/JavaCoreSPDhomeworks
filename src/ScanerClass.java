@@ -9,7 +9,7 @@ class ScanerClass {
             "56.67.156.56--[11/Jun/2016:01:10:15 +0200]\"GET/login HTTP/1.1\" 200 14304",
             "213.177.76.35--[02/Jul/2016:11:38:00 +0200]\"GET/login HTTP/1.1\" 500 1898"};
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
 
         String pattern = "(\\d+[.]\\d+[.]\\d+[.]\\d+)--\\D(\\d{2}/\\w+/\\d{4})\\D(\\d+[:]\\d+[:]\\d+)" +
