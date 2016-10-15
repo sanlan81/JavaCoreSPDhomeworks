@@ -15,9 +15,10 @@ class ScanerClass {
         String pattern = "(\\d+[.]\\d+[.]\\d+[.]\\d+)--\\D(\\d{2}/\\w+/\\d{4})\\D(\\d+[:]\\d+[:]\\d+)" +
                 "\\s\\D\\d+\\D+\\w+[.]?\\w+/\\w+\\s?\\w+?/\\d+[.]\\d+\\D+\\s\\d+\\s\\d+";
 
+        Scanner scanner = null;
 
         for (String s : myData) {
-            Scanner scanner = new Scanner(s);
+            scanner = new Scanner(s);
             scanner.useDelimiter("\\s*,\\s*");
             scanner.hasNext(pattern);
             scanner.next(pattern);
