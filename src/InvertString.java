@@ -1,15 +1,10 @@
-
 public class InvertString {
     public static void main(String[] args) {
 
-        String s = "Rainbow";
+        String s1 = "My rainbow is cool !";
 
-        char[] ms = s.toCharArray();
+        StringBuilder stringBuilder = new StringBuilder(s1);
 
-        for (int i = ms.length - 1; i >= 0; i--) {
-
-            System.out.print(ms[i] + "\t");
-        }
-
+        System.out.println(stringBuilder.reverse().toString());
     }
 }
