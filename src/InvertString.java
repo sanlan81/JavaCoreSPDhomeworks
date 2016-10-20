@@ -1,10 +1,17 @@
+import java.util.Scanner;
+
 public class InvertString {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String inputText = sc.nextLine();
 
-        String s1 = "My rainbow is cool !";
+        String revertOutText = "";
+        String[] mas = inputText.split(" ");
 
-        StringBuilder stringBuilder = new StringBuilder(s1);
+        for (int i = mas.length - 1; i >= 0; i--) {
+            revertOutText += mas[i] + " ";
+        }
 
-        System.out.println(stringBuilder.reverse().toString());
+        System.out.println(revertOutText);
     }
 }
