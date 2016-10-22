@@ -1,3 +1,5 @@
+package com.spduniversity.javacore.hw2;
+
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
