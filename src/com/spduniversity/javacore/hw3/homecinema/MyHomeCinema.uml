@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>MyHomeCinema</OriginalElement>
+  <nodes>
+    <node x="380.0" y="0.0">MyHomeCinema.DVDPlayer</node>
+    <node x="0.0" y="567.0">MyHomeCinema.TheaterLight</node>
+    <node x="452.0" y="567.0">MyHomeCinema.Screen</node>
+    <node x="700.0" y="85.0">MyHomeCinema.Projector</node>
+    <node x="594.0" y="339.0">MyHomeCinema.Tuner</node>
+    <node x="226.0" y="567.0">MyHomeCinema.PopcornPopper</node>
+    <node x="0.0" y="339.0">MyHomeCinema.CDPlayer</node>
+    <node x="0.0" y="0.0">MyHomeCinema.Amplifier</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="MyHomeCinema.Amplifier" target="MyHomeCinema.CDPlayer">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MyHomeCinema.Projector" target="MyHomeCinema.DVDPlayer">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MyHomeCinema.Amplifier" target="MyHomeCinema.DVDPlayer">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MyHomeCinema.Amplifier" target="MyHomeCinema.Tuner">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="513.0" y="249.0" />
+  <SelectedNodes>
+    <node>MyHomeCinema.Projector</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
