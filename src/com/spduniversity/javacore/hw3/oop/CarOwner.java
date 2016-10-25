@@ -12,26 +12,26 @@ class TestCar {
 
     private void go() {
 
-        LanskyyCar lc = new LanskyyCar();
-        PitersCar pc = new PitersCar();
+        HighspeedCar highspeedCar = new HighspeedCar();
+        MilitaryCar militaryCar = new MilitaryCar();
 
         ArrayList<Car> arrayList = new ArrayList<>();
         // TODO Auto-generated method stub
 
-        lc.setColor("Green");
-        pc.setColor("Black");
+        highspeedCar.setColor("Green");
+        militaryCar.setColor("Black");
 
-        lc.setNumberOfDoors(5);
-        pc.setNumberOfDoors(2);
+        highspeedCar.setNumberOfDoors(5);
+        militaryCar.setNumberOfDoors(2);
 
-        lc.setBrand("BMW");
-        pc.setBrand("GTUO-Tank");
+        highspeedCar.setBrand("BMW");
+        militaryCar.setBrand("GTUO-Tank");
 
 
-        pc.submerge();
-        pc.startEnergy();
-        arrayList.add(lc);
-        arrayList.add(pc);
+        militaryCar.submerge();
+        militaryCar.startEnergy();
+        arrayList.add(highspeedCar);
+        arrayList.add(militaryCar);
 
         //Используем Общий тип Car для всех машин
         for (Car carr : arrayList) {
@@ -44,10 +44,10 @@ class TestCar {
         }
 
         System.out.println("===============================");
-        System.out.println(" Нет моя машина самая лучшая  ее скорость " + lc.speedDistannce(5)+ "км/ч");
-        System.out.println("Она со встроенным оружием и это "+ pc.isGunOnBoard);
-        System.out.println("Она умеет погружаться на глубину " + pc.currentSubmergeDepth +" метров");
-        System.out.println("И конечно же  аббалденная стратовая  скорость " +  pc.startEnergy + "км ч");
+        System.out.println(" Нет моя машина самая лучшая  ее скорость " + highspeedCar.speedDistannce(5)+ "км/ч");
+        System.out.println("Она со встроенным оружием и это "+ militaryCar.isGunOnBoard);
+        System.out.println("Она умеет погружаться на глубину " + militaryCar.currentSubmergeDepth +" метров");
+        System.out.println("И конечно же  аббалденная стратовая  скорость " +  militaryCar.startEnergy + "км ч");
          //pc.makeSound();
 
 

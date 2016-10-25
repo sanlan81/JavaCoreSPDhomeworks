@@ -1,7 +1,6 @@
 package com.spduniversity.javacore.hw3.oop;
 
-
-class PitersCar extends Car {
+class MilitaryCar extends Car {
 
 
     int currentSubmergeDepth;
