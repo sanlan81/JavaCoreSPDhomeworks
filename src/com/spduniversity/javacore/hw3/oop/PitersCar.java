@@ -2,26 +2,22 @@ package com.spduniversity.javacore.hw3.oop;
 
 
 class PitersCar extends Car {
-    private String name;
 
-    @Override
-    public void setName(String name) {
-        // TODO Auto-generated method stub
-        this.name = name;
+
+    int currentSubmergeDepth;
+    boolean isGunOnBoard = true;
+
+
+    //Погружается умеет нырять на определенную глубину
+    void submerge(){
+        currentSubmergeDepth = 50;
     }
 
-    public String getName() {
-        return name;
-    }
+    //void surface(){
+    //}
 
-    public int drive(int howlong) {
-        return distance = howlong * 180;
-
-    }
-
-    @Override
     void makeSound() {
-        System.out.println("Piter's car beep");
+        System.out.println("Такая сигналка что уши пухнут у окружаюших!");
     }
 
 }

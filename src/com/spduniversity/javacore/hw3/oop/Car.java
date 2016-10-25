@@ -1,39 +1,69 @@
 package com.spduniversity.javacore.hw3.oop;
 
 class Car {
-
     private CDPlayer cdPlayer = new CDPlayer();
+    private int numberOfDoors;
+    private String color;
+    private String name;
+    protected int startEnergy = 0;
+
+
+
 
     void play() {
         cdPlayer.play();
     }
 
-    private String name;
-    int distance = 0;
 
-    public void setName(String name) {
+    int getNumberOfDoors() {
+        return numberOfDoors;
+    }
+
+    void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }
+
+
+
+     String getColor() {
+        return color;
+    }
+
+     void setColor(String color) {
+        this.color = color;
+    }
+
+
+     void setBrand(String name) {
+
         this.name = name;
     }
 
-    public String getName() {
+    String getBrand() {
+
         return name;
     }
 
-   /* public void start() {
+    // Расчитываем скорость
+    int speedDistannce(int speed) {
+        return  speed * 60;
+    }
+
+    //Стартовая скорость
+     void startEnergy() {
+          startEnergy = 100;
     }
 
 
-    public void stop() {
+  /*  public void stopEnergy() {
+    int tempCounter = 0;
     }
 */
 
 
-    public int drive(int howlong) {
-        return distance = howlong * 60;
-    }
 
 
-    void makeSound() {
-        System.out.println("Car beep");
-    }
+
+
+
 }
