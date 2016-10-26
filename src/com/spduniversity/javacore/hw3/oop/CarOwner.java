@@ -14,6 +14,7 @@ class TestCar {
 
         HighspeedCar highspeedCar = new HighspeedCar();
         MilitaryCar militaryCar = new MilitaryCar();
+        ToysCar toysCar = new ToysCar();
 
         ArrayList<Car> arrayList = new ArrayList<>();
         // TODO Auto-generated method stub
@@ -48,6 +49,11 @@ class TestCar {
         System.out.println("Она со встроенным оружием и это "+ militaryCar.isGunOnBoard);
         System.out.println("Она умеет погружаться на глубину " + militaryCar.currentSubmergeDepth +" метров");
         System.out.println("И конечно же  аббалденная стратовая  скорость " +  militaryCar.startEnergy + "км ч");
+        militaryCar.voiceConnection();
+        System.out.println("===============================");
+
+        toysCar.voiceConnection();
+
          //pc.makeSound();
 
 

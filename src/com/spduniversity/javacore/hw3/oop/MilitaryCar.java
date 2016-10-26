@@ -1,6 +1,6 @@
 package com.spduniversity.javacore.hw3.oop;
 
-class MilitaryCar extends Car {
+class MilitaryCar extends Car implements Controlling{
 
 
     int currentSubmergeDepth;
@@ -19,4 +19,7 @@ class MilitaryCar extends Car {
         System.out.println("Такая сигналка что уши пухнут у окружаюших!");
     }
 
+    public void voiceConnection() {
+        System.out.println("This car understand voice command \"Engine  on!!!\"");
+    }
 }
