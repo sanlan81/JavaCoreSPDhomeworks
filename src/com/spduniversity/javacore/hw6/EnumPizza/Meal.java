@@ -26,8 +26,8 @@ public class Meal {
             System.out.println("We have differents pizzas: (A)Americano, (I)Italiano or you can pick up " + "\n" +
                     "your (O)Own Pizza. " + "What would you like? Please enter  A, I or O ");
 
-            kindType = keyboard.nextLine().charAt(0);
-
+            //kindType = keyboard.nextLine().charAt(0);
+            kindType = keyboard.next().trim().charAt(0);
             if (kindType == 'A' || kindType == 'a') {
                 americanoPizza++;
                 System.out.println(Pizza.Name.Americano);
@@ -68,8 +68,8 @@ public class Meal {
                     System.out.println("Do you want to add any of these ingridients ? " + "\n" +
                             "(C)Cheese ,(S)Sausage, (R)Corn, (N)No");
                 }
-                trueIngridient = keyboard.nextLine().charAt(0);
-
+               // trueIngridient = keyboard.nextLine().charAt(0);
+                trueIngridient = keyboard.next().trim().charAt(0);
                 if (trueIngridient == 'C' || trueIngridient == 'c') {
 
                     if (kindType == 'I' || kindType == 'i') {
@@ -116,7 +116,8 @@ public class Meal {
             }
             System.out.println("If you want to order another pizza or this same  one more press any letter!  " + "\n" +
                     "If  you want receive the check press (N)");
-            trueIngridient = keyboard.nextLine().charAt(0);
+            //trueIngridient = keyboard.nextLine().charAt(0);
+            trueIngridient = keyboard.next().trim().charAt(0);
             if (trueIngridient == 'N' || trueIngridient == 'n') {
                 pizzas = false;
             }
