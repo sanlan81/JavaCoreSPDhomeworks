@@ -14,4 +14,6 @@ package com.spduniversity.javacore.hw8.AnonymousClass;
     public String toString() {
         return name + " " + price;
     }
-}
+
+
+ }
