@@ -1,8 +1,8 @@
 package com.spduniversity.javacore.hw8.InterfaceStackT;
 
 
-public interface Stack<T>{
+ interface Stack<T> {
     boolean isEmpty();
-    void  push(T a);
-    int pop() ;
+   void  push(T a);
+    T pop() throws ArrayIndexOutOfBoundsException;
 }

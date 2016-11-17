@@ -1,34 +1,27 @@
 package com.spduniversity.javacore.hw8.InterfaceStackT;
 
-class ArrayStack<T> implements Stack<T> {
 
-    private final int massSize;
-    private int[] stackArray;
-    private int top;
+import java.util.*;
 
-    ArrayStack(int m) {
-        this.massSize = m;
-        stackArray = new int[massSize];
-        top = -1;
-    }
+ class ArrayStack<T> implements Stack<T>{
 
-    @Override
-    public void push(T element) {
-        System.out.print(element + " ");
-        stackArray[++top] = (Integer) element;
-    }
-
-    @Override
-    public int pop() {
-        return stackArray[top--];
-    }
-
+   List<T> arrList = new ArrayList<>();
     @Override
     public boolean isEmpty() {
-        return (top == -1);
+        return arrList.isEmpty();
+    }
+
+    @Override
+    public void push(T a) {
+         arrList.add(a);
+    }
+
+    @Override
+    public T pop() throws ArrayIndexOutOfBoundsException{
+
+        return arrList.remove(arrList.size()-1);
+
     }
 
 
 }
-
-
