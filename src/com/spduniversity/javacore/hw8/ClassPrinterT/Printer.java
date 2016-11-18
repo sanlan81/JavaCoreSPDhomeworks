@@ -1,25 +1,14 @@
 package com.spduniversity.javacore.hw8.ClassPrinterT;
 
+class Printer<T> {
 
-import java.util.Arrays;
+    public <T extends Printable> void print(T[] arrayObjects) {
 
-class Printer <T>{
+        System.out.println("Array Objects : " );
 
-     private T[] massObjects;
+        for (T arr : arrayObjects) {
+           arr.print();
 
-    public void print(T[] paramObjects) {
-        this.massObjects = paramObjects;
-
-        System.out.println("Printing mass Objects " + Arrays.toString(massObjects));
+        }
     }
-
-    @Override
-    public String toString() {
-        return "Printer{" +
-                "massObjects=" + Arrays.toString(massObjects) +
-                '}';
-    }
-
-
-
- }
+}
