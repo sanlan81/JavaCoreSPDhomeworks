@@ -1,0 +1,3 @@
+name: Americano
+description: To prepare the dough for 2 American pizza  to cook on 2 round baking pans with a diameter of 35 inches we need
+ingredients: Cheese, Sausege, Olive
