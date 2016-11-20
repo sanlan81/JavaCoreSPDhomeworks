@@ -1,0 +1,3 @@
+name: Sausege
+description: Sausege
+price: 7
