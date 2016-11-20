@@ -27,21 +27,21 @@ public class PizzaRunner {
         ingredientManager.loadIngredientsFromDir(ingredientsResDir);
         pizzaManager.loadPizzasFromDir(pizzasResDir);
 
-        //���⠥�� � 䠩�?�
-        // ���������� �? �?�� � ��� � ? � � ��� �� ?���?�?��� �? �?��
+        //Read from the Files
+        // We would like to know our base pizza names their  descriptions and ingredients prices
         for (Map.Entry entry : pizzaManager.getAll().entrySet()) {
             System.out.println("We have one of our base pizzas : ");
             System.out.println(entry.getValue());
         }
         System.out.println("\n=========================== \nWe wonts to make ouwn pizza so we have for this:\n");
-        //����� � ��  ?���?�?��� � �?�� ������ � 䠩���
-        // �������� 㢥�� ᯨ᮪  ?���?�?���?� 鮡 �?���  ����� �?��
+        // We didn' t like our base pizzas  we would like  to make  our ouw pizza so
+        // Read from the Files all ingredients and their prices
         for (Map.Entry entry : ingredientManager.getAll().entrySet()) {
             System.out.println(entry.getValue().toString());
         }
         System.out.println("\n=========================== ");
 
-        //�������� 2 ��� + ������� + ��?ப +  1 ��?᪠
+        //Well after thinking we decided  to order some of these ingredients here it is our total price
         System.out.println(" Your  Total Praise : " + (ingredientManager.get("Cheese").getPrice() +
                 ingredientManager.get("Cheese").getPrice() + ingredientManager.get("Pork").getPrice() +
                 ingredientManager.get("Cucumber").getPrice() + ingredientManager.get("Cucumber").getPrice() +
