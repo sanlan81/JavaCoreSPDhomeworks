@@ -27,21 +27,21 @@ public class PizzaRunner {
         ingredientManager.loadIngredientsFromDir(ingredientsResDir);
         pizzaManager.loadPizzasFromDir(pizzasResDir);
 
-        //Почитаемо з файл?в
-        // Подивимось як? п?цци у нас є ? що у них за ?нгр?д?енти т? ц?на
+        //я┐╜я┐╜я┐╜таея┐╜я┐╜ я┐╜ файя┐╜?я┐╜
+        // я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜? я┐╜?я┐╜я┐╜ я┐╜ я┐╜я┐╜я┐╜ я┐╜ ? я┐╜ я┐╜ я┐╜я┐╜я┐╜ я┐╜я┐╜ ?я┐╜я┐╜я┐╜?я┐╜?я┐╜я┐╜я┐╜ я┐╜? я┐╜?я┐╜я┐╜
         for (Map.Entry entry : pizzaManager.getAll().entrySet()) {
             System.out.println("We have one of our base pizzas : ");
             System.out.println(entry.getValue());
         }
         System.out.println("\n=========================== \nWe wonts to make ouwn pizza so we have for this:\n");
-        //Почитаємо що за  ?нгр?д?енти та ц?на лежать у файлах
-        // Виводимо увесь список  ?нгр?д?ент?в щоб з?брати  власну П?цу
+        //я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜ я┐╜я┐╜  ?я┐╜я┐╜я┐╜?я┐╜?я┐╜я┐╜я┐╜ я┐╜ я┐╜?я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜ файя┐╜я┐╜я┐╜
+        // я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ увея┐╜я┐╜ список  ?я┐╜я┐╜я┐╜?я┐╜?я┐╜я┐╜я┐╜?я┐╜ щоб я┐╜?я┐╜я┐╜я┐╜  я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜?я┐╜я┐╜
         for (Map.Entry entry : ingredientManager.getAll().entrySet()) {
             System.out.println(entry.getValue().toString());
         }
         System.out.println("\n=========================== ");
 
-        //Закажемо 2 сиру + Свинина + Ог?рок +  1 сос?ска
+        //я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ 2 я┐╜я┐╜я┐╜ + я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ + я┐╜я┐╜?рок +  1 я┐╜я┐╜?ска
         System.out.println(" Your  Total Praise : " + (ingredientManager.get("Cheese").getPrice() +
                 ingredientManager.get("Cheese").getPrice() + ingredientManager.get("Pork").getPrice() +
                 ingredientManager.get("Cucumber").getPrice() + ingredientManager.get("Cucumber").getPrice() +
