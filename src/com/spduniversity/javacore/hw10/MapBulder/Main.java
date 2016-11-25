@@ -1,4 +1,4 @@
-package com.spduniversity.javacore.hw10.MapBuilderStringInteger;
+package com.spduniversity.javacore.hw10.MapBulder;
 
 import java.util.*;
 
@@ -12,7 +12,7 @@ public class Main {
         Map<String, Integer> map =
                 new LoaderWords().loaderReservedWords(String.valueOf(finder.find(javaFile)));
 
-        System.out.println("\nSorting by Key : \n" + map);
-        System.out.println("\nSorting by Value : \n" + sortingByValue.sortByValue(map));
+        System.out.println("\n Sorting by Key : \n" + map);
+        System.out.println("\n Sorting by Value : \n" + sortingByValue.sortByValue(map));
     }
 }

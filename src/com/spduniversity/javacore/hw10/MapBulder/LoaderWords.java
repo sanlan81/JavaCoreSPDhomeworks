@@ -1,11 +1,11 @@
-package com.spduniversity.javacore.hw10.MapBuilderStringInteger;
+package com.spduniversity.javacore.hw10.MapBulder;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-class LoaderWords implements ReservedWordsInterface {
+class LoaderWords  implements ReservedWordsInterface {
 
     private Map<String, AtomicInteger> counterMap = new HashMap<>();
     private Map<String, Integer> sortingMap = new TreeMap<>();

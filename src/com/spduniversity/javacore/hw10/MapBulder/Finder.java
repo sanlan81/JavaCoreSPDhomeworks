@@ -1,4 +1,4 @@
-package com.spduniversity.javacore.hw10.MapBuilderStringInteger;
+package com.spduniversity.javacore.hw10.MapBulder;
 
 
 import java.io.File;
@@ -12,6 +12,4 @@ import java.io.File;
         }
         return null;
     }
-
-
 }
