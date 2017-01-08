@@ -1,0 +1,46 @@
+CREATE TABLE Person (
+  BusinessEntityId INT(11) AUTO_INCREMENT NOT NULL,
+  PersonType VARCHAR(15) NOT NULL,
+  NameStyle VARCHAR(50) NOT NULL ,
+  Title VARCHAR(50) NOT NULL,
+  FirstName VARCHAR(50) NOT NULL,
+  MiddleName VARCHAR(50) NOT NULL,
+  LastName VARCHAR(50) NOT NULL,
+  Suffi VARCHAR(50) NOT NULL,
+  EmailPromition VARCHAR(50) NOT NULL,
+  AdditionalContactInfo VARCHAR(50) NOT NULL,
+  Demographic VARCHAR(50) NOT NULL,
+  rowguId INT NOT NULL,
+  Modified  DATE NOT NULL,
+  PRIMARY KEY (BusinessEntityId)
+);
+
+CREATE TABLE PersonPhone (
+  BusinessEntityId INT(11) NOT NULL,
+  PhoneNumber VARCHAR(20) NOT NULL,
+  PhoneNumberTypeId INT NOT NULL,
+  ModifiedDate DATE NULL,
+  PRIMARY KEY (BusinessEntityId, PhoneNumber, PhoneNumberTypeId),
+  CONSTRAINT BusinessEntityId_Person_fk
+  FOREIGN KEY (BusinessEntityId)
+  REFERENCES Person (BusinessEntityId)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION);
+
+INSERT INTO Person VALUES (
+  1,'G','Brenda','developer','Hannah','Luisa','Miller',
+  'Yes','sanlan@bigmir.net','likes horse','Demographic',10,'2014-05-21');
+INSERT INTO Person VALUES (
+  2,'W','Mender','developer','John','Man','Miller',
+  'No','sanlan@gmail.com','don\'t likes horse','Demographic',11,'2014-02-11');
+SELECT * FROM Person;
+
+
+INSERT INTO PersonPhone VALUES (1,'52-17-11',10,'2014-05-21');
+INSERT INTO PersonPhone VALUES (2,'80-17-01',11,'2000-03-21');
+SELECT * FROM PersonPhone;
+
+DELETE  Person FROM Person WHERE BusinessEntityId = 1;
+SELECT * FROM Person;
+SELECT * FROM PersonPhone;
+
