@@ -13,7 +13,7 @@ CREATE TABLE Person (
   rowguId INT NOT NULL,
   Modified  DATE NOT NULL,
   PRIMARY KEY (BusinessEntityId)
-);
+) ENGINE=InnoDB;
 
 CREATE TABLE PersonPhone (
   BusinessEntityId INT(11) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE PersonPhone (
   FOREIGN KEY (BusinessEntityId)
   REFERENCES Person (BusinessEntityId)
     ON DELETE CASCADE
-    ON UPDATE NO ACTION);
+    ON UPDATE NO ACTION) ENGINE=InnoDB;
 
 INSERT INTO Person VALUES (
   1,'G','Brenda','developer','Hannah','Luisa','Miller',
